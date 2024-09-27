@@ -11,7 +11,7 @@ import * as Summarizer from './summarizer.js';
 const app = express();
 
 const supabase = supabaseClient.createClient();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;  // Use either port 4000 or the environment port
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
